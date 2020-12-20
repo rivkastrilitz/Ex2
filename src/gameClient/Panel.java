@@ -153,7 +153,7 @@ public class Panel extends JPanel{
                         //if dest grater then src
                     }else{
                         try {
-                           // BufferedImage img = ImageIO.read(new File("./src/gameClient/resources/balvazor.jpg"));
+                           //BufferedImage img = ImageIO.read(new File("./src/gameClient/resources/balvazor.jpg"));
                             BufferedImage img = ImageIO.read(new File("gameClient\\resources\\balvazor.jpg"));
                             g.drawImage(img, (int) location.x()-r , (int) location.y()-r , 25, 25, null);
                             g.setColor( new Color(0xE5E5EA));
@@ -251,7 +251,8 @@ public class Panel extends JPanel{
     private void drawTitle(Graphics g)  {
 
     try {
-        BufferedImage img = ImageIO.read(new File("./src/resources/Pokemon-Symbol.jpg"));
+        //BufferedImage img = ImageIO.read(new File("./src/resources/Pokemon-Symbol.jpg"));
+        BufferedImage img = ImageIO.read(new File("resources\\Pokemon-Symbol.jpg"));
 
         g.drawImage(img,300,10,180,100,null);
     }
