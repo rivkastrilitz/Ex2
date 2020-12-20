@@ -35,6 +35,7 @@ public class Arena {
 		time=0;
 	}
 
+
 	/**
 	 * the function sets the time of the game
 	 * @param t
