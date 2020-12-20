@@ -48,9 +48,10 @@ public class Ex2 implements Runnable {
         dw_graph_algorithms algo_run = new DWGraph_Algo();// graph algorithms to help create a graph and use more function on it
 
         game_service game1 =Game_Server_Ex2.getServer(this.scenario);// the game level
-
         // login to the game with id
         game1.login(this.id);
+
+
 
         try {
             // initiate the graph by the information from the game

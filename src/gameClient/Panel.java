@@ -141,7 +141,8 @@ public class Panel extends JPanel{
                     //if src of pokemon edge is grater then the dest
                     if (poki.getType() < 0) {
                         try {
-                            BufferedImage img = ImageIO.read(new File("./src/resources/pica.png"));
+                           // BufferedImage img = ImageIO.read(new File("./src/gameClient/resources/pica.png"));
+                            BufferedImage img = ImageIO.read(new File("gameClient\\resources\\pica.png"));
                             g.drawImage(img, (int) location.x()-r , (int) location.y() - r, 25, 25, null);
                             g.setColor( new Color(0xE5E5EA));
                             g.setFont(new Font("Wide Latin",Font.BOLD,10));
@@ -152,7 +153,8 @@ public class Panel extends JPanel{
                         //if dest grater then src
                     }else{
                         try {
-                            BufferedImage img = ImageIO.read(new File("./src/resources/balvazor.jpg"));
+                           // BufferedImage img = ImageIO.read(new File("./src/gameClient/resources/balvazor.jpg"));
+                            BufferedImage img = ImageIO.read(new File("gameClient\\resources\\balvazor.jpg"));
                             g.drawImage(img, (int) location.x()-r , (int) location.y()-r , 25, 25, null);
                             g.setColor( new Color(0xE5E5EA));
                             g.setFont(new Font("Wide Latin",Font.BOLD,10));
@@ -186,7 +188,8 @@ public class Panel extends JPanel{
                     geo_location agent_loc = this._w2f.world2frame(gl);
 
                     try {
-                        BufferedImage img = ImageIO.read(new File("./src/resources/ash face.gif"));
+                        // BufferedImage img = ImageIO.read(new File("./src/gameClient/resources/ash face.gif"));
+                        BufferedImage img = ImageIO.read(new File("gameClient\\resources\\ash face.gif"));
                         g.drawImage(img, (int) agent_loc.x() - r, (int) agent_loc.y() - r, 30, 30, null);
 
                     } catch (IOException ex) {
