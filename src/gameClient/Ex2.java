@@ -65,7 +65,7 @@ public class Ex2 implements Runnable {
         _screen.remove(entry);
         init_screen(game_arena);
 
-        System.out.println(game1);
+
         // create a  Priority Queue of Pokemons by their value
         PriorityQueue <CL_Pokemon> Pokemons_pri = init_pokemones(game1,game_arena,algo_run);// collection of pokemos by their value
         try {
@@ -91,7 +91,7 @@ public class Ex2 implements Runnable {
                 on_edge = 0;
             if (time_to<=7)
                 sleep_change =20;
-            System.out.println(game1.getAgents());
+
                 try {
 
                     Thread.sleep(dt-(on_edge+sleep_change));
