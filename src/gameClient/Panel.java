@@ -33,7 +33,9 @@ public class Panel extends JPanel{
     private Range2Range _w2f;
 
 
-
+    /**
+     * constructor of panel
+     */
     public  Panel() {
         super();
         this.setLayout(null);
@@ -83,7 +85,7 @@ public class Panel extends JPanel{
     }
 
     /**
-     *
+     * drawing the info to the panel
      * @param g
      */
     private void drawInfo(Graphics g) {
@@ -255,7 +257,12 @@ public class Panel extends JPanel{
     }
 
 }
-private void drawlevel(Graphics g){
+
+    /**
+     * adding label of level
+     * @param g
+     */
+    private void drawlevel(Graphics g){
     g.setColor(new Color(246, 242, 242));
     g.setFont(new Font("Wide Latin", Font.BOLD, 18) );
     g.drawString("level: "+Ex2.scenario,this.getWidth()-100,57);
