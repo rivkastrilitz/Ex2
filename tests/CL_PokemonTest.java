@@ -1,7 +1,6 @@
-package gameClient;
-
 import api.EdgeData;
 import api.edge_data;
+import gameClient.CL_Pokemon;
 import gameClient.util.Point3D;
 import org.junit.jupiter.api.Test;
 

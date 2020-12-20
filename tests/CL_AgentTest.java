@@ -1,6 +1,6 @@
-package gameClient;
-
 import api.*;
+import gameClient.CL_Agent;
+import gameClient.CL_Pokemon;
 import gameClient.util.Point3D;
 import org.junit.jupiter.api.Test;
 
