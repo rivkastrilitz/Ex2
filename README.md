@@ -77,26 +77,26 @@ each agent has a  position, an id, value, and speed.
 
 Arena:
 this class contains function such as:
-*GraphRange- returns the graph range as a range2D object.
-*w2f -adjust the range of the graph to a range that suits the frame.
-*correct_pokemon_edge-returns the current pokemon edge according to the pokemon position on the graph.
-*init_Agents_by_game - crate agents object from the Jason object that has been received from the server.
-*get_Agents_update- update agents from the Jason object that has been received from the server.
-*pokemon_contain- the function checks that the pokemon that the agent is looking for is available.
-*pokemon_in_search-the function checks if the current pokemon is already in progress of searching.
-*json2Pokemons_update-the function return a list of pokemons by the json information the function gets
-*closest_pokemon-the function returns the closest pokemon to a specific agent.
-*on_pokemon_edge- checks if the current agent is on an edge with a pokemon.
+* GraphRange - returns the graph range as a range2D object.
+* w2f - adjust the range of the graph to a range that suits the frame.
+* correct_pokemon_edge - returns the current pokemon edge according to the pokemon position on the graph.
+* init_Agents_by_game - crate agents object from the Jason object that has been received from the server.
+* get_Agents_update - update agents from the Jason object that has been received from the server.
+* pokemon_contain - the function checks that the pokemon that the agent is looking for is available.
+* pokemon_in_search - the function checks if the current pokemon is already in progress of searching.
+* json2Pokemons_update - the function return a list of pokemons by the json information the function gets
+* closest_pokemon - the function returns the closest pokemon to a specific agent.
+* on_pokemon_edge - checks if the current agent is on an edge with a pokemon.
 
 Ex2:
 in this class, there is an algorithm that calculates the best way to move the agents across the graph in order to eat the pokemons.
 this class contains function such us:
-*init_graph_to_algo- this function set the graph, to   the number of the level provided
-*init_pokemones- this function get the pokemons from the game and set them to a list
+* init_graph_to_algo - this function set the graph, to   the number of the level provided
+* init_pokemones - this function get the pokemons from the game and set them to a list
 then go over the list and insert them into a Priority Queue.
-*add_all_agents-the function returns a Queue of pokemons that contain all the pokemons,
+* add_all_agents - the function returns a Queue of pokemons that contain all the pokemons,
  that is currently set to an agent.
-*game_full_move- this function make updates to the pokemons and agents, and updating the next move.
+* game_full_move - this function make updates to the pokemons and agents, and updating the next move.
 
 
 frame:
@@ -111,9 +111,9 @@ this class implements the ActionListener interface, so that when pressing the bo
  Panel:
  this class is used for making  graphics for the game.
 this class contins function such us :
-* updateFrame- uses to update the range of the panel. 
-*paint-build the grapics of the arena.
-*drawGraph-drawing the graph by colling draw node and draw edge.
-*drawPokemons- drowing the pokemons on the graph. 
-*drawAgants-drowing the agents on the  graph.
-*drawClock-making a timer for the game.
+* updateFram e- uses to update the range of the panel. 
+* paint - build the grapics of the arena.
+* drawGraph - drawing the graph by colling draw node and draw edge.
+* drawPokemons - drowing the pokemons on the graph. 
+* drawAgants - drowing the agents on the  graph.
+* drawClock  -making a timer for the game.
