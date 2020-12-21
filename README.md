@@ -1,10 +1,10 @@
 
-
+# directed weighted graph and pokemon game:
 This repository represents a structure of a weighted graph,
 with some algorithms that can be used on the graph .
 in addition, there is a pokemon game that can operate on the graph.
 
-uses of the program:
+ ### uses of the program:
 1) can be used as a GPS, can contain many cities locations,
  and calculate the shortest path from one destination to another
 2) can be used as a shape creator, create mane nodes and edges for a shape,
@@ -12,14 +12,14 @@ and calculate the shortest path from one node to another.
 3)playing the pokemons game.
 
 # Part 1:
-structure:
+### structure:
 the graph is built from vertices that are represented by the NodeData class, which implements the node_data interface.
 and from edges that are represented by EdgeData which implements the edge_data interface.
 the graph is represented by the DWGraph_DS class that implements the directed_weighted_graph interface.
 the algorithms of the graph are represented by the DWGraph_Algo,
 which implements the dw_graph_algorithms interface.
 
-the graph:
+## the graph:
 the graph class includes functions such as:
 
 * add node -  add a new node to the graph
@@ -34,7 +34,7 @@ the graph class includes functions such as:
 * edge size - return the number of edges in the graph
 *get mc-return the number of changes that computed on the graph 
 
-the graph algorithms :
+## the graph algorithms :
 the graph algorithms class includes functions such as:
 
 * init - initiate the graph algorithm to point on a graph
@@ -66,17 +66,18 @@ the purpose of the game is to eat as many pokemons as possible using the agents 
 for this part of the project, we have been given a server.
 we use the information that we get from deserialized the server Jason objects to write the arena(represented with a directed weighted graph) and to get the pokemons and the agents. 
 
-structure :
+### structure :
 the game is built from the arena of the game. on the arena, we can add pokemons objects and agents objects.
  class Ex2 uses to run the game.
 also, there is 3 GUI classes to enable us to see the game.
-CL_Pokemon:
+
+## CL_Pokemon:
 each pokemon have a type, value, edge that he located on and position on the graph.
 
-CL_Agents:
+## CL_Agents:
 each agent has a  position, an id, value, and speed.
 
-Arena:
+## Arena:
 this class contains function such as:
 * GraphRange - returns the graph range as a range2D object.
 * w2f - adjust the range of the graph to a range that suits the frame.
@@ -89,7 +90,7 @@ this class contains function such as:
 * closest_pokemon - the function returns the closest pokemon to a specific agent.
 * on_pokemon_edge - checks if the current agent is on an edge with a pokemon.
 
-Ex2:
+## Ex2:
 in this class, there is an algorithm that calculates the best way to move the agents across the graph in order to eat the pokemons.
 this class contains function such us:
 * init_graph_to_algo - this function set the graph, to   the number of the level provided
@@ -100,16 +101,15 @@ then go over the list and insert them into a Priority Queue.
 * game_full_move - this function make updates to the pokemons and agents, and updating the next move.
 
 
-frame:
+## frame:
 this class used to create a GUI frame on which we will add Jpanels.
 
-
-entryPanel:
+## entryPanel:
  this class is used to make a log -in panel .
 in this panel the user can login with his id, in order to save his scores. and also to put the number of the scenario that he wishes to play in.
 this class implements the ActionListener interface, so that when pressing the botton "start game" the game will start.
 
- Panel:
+ ## Panel:
  this class is used for making  graphics for the game.
 this class contins function such us :
 * updateFram e- uses to update the range of the panel. 
@@ -118,3 +118,6 @@ this class contins function such us :
 * drawPokemons - drowing the pokemons on the graph. 
 * drawAgants - drowing the agents on the  graph.
 * drawClock  -making a timer for the game.
+
+particulars classe that based on an external code:
+* clasess : Panel,entryPanel,frame,Arena,CL_Agents
