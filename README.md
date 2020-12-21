@@ -11,7 +11,7 @@ uses of the program:
 and calculate the shortest path from one node to another.
 3)playing the pokemons game.
 
-Part 1:
+# Part 1:
 structure:
 the graph is built from vertices that are represented by the NodeData class, which implements the node_data interface.
 and from edges that are represented by EdgeData which implements the edge_data interface.
@@ -60,7 +60,8 @@ by the next commend -
 $ git clone 
 and to use the program on your computer create a main class,
 and use the class in the weighted graph program
-part 2 -the pokemons game:
+
+ # part 2 -the pokemons game:
 the purpose of the game is to eat as many pokemons as possible using the agents and doing that with minimum moves.
 for this part of the project, we have been given a server.
 we use the information that we get from deserialized the server Jason objects to write the arena(represented with a directed weighted graph) and to get the pokemons and the agents. 
