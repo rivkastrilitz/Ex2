@@ -116,9 +116,9 @@ this class contins function such us :
 * clasess : Panel,entryPanel,frame,Arena,CL_Agents base on 
 
 ### How To Run :
-to run this program you should pull this repository to your git
-by the next commend -
-$ git clone 
-and to use the program on your computer create a main class,
-and use the class in the weighted graph program
-or if you want to run the full pokemon game just use the Jar Ex2
+* to run this program you should pull this repository to your git
+* by the next commend -
+* $ git clone https://github.com/rivkastrilitz/Ex2.git
+then to use the program on your computer create a main class,
+and use the class in the weighted graph program.
+or if you want to run the full pokemon game just use the Jar Ex2.
