@@ -20,7 +20,7 @@ the algorithms of the graph are represented by the DWGraph_Algo,
 which implements the dw_graph_algorithms interface.
 
 ## the graph:
-the graph class includes functions such as:
+### the graph class includes functions such as:
 
 * add node -  add a new node to the graph
 * has an edge - return if there  is an edge between two vertices
@@ -35,7 +35,7 @@ the graph class includes functions such as:
 *get mc-return the number of changes that computed on the graph 
 
 ## the graph algorithms :
-the graph algorithms class includes functions such as:
+### the graph algorithms class includes functions such as:
 
 * init - initiate the graph algorithm to point on a graph
 * copy - Compute a deep copy of the graph in the graph algorithms
@@ -45,21 +45,14 @@ the graph algorithms class includes functions such as:
 * save - save a graph from the graph algorithms as a Jasonobject 
 * load - load a graph from a Jasonobject to the graph algorithms
 
-particulars functions that based on an external code:
+### particulars functions that based on an external code:
 
 * is connected function base on the "breadth-first search" algorithm.
 * shortest path Dist and shortest Path based on the "Dijkstra's " algorithm.
 
-links:
+### links:
 * Dijkstra's algorithm: https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
 * breadth-first search algorithm: https://en.wikipedia.org/wiki/Breadth-first_search
-
-How To Run :
-to run this program you should pull this repository to your git
-by the next commend -
-$ git clone 
-and to use the program on your computer create a main class,
-and use the class in the weighted graph program
 
  # part 2 -the pokemons game:
 the purpose of the game is to eat as many pokemons as possible using the agents and doing that with minimum moves.
@@ -119,5 +112,13 @@ this class contins function such us :
 * drawAgants - drowing the agents on the  graph.
 * drawClock  -making a timer for the game.
 
-particulars classe that based on an external code:
-* clasess : Panel,entryPanel,frame,Arena,CL_Agents
+### particulars classe that based on an external code:
+* clasess : Panel,entryPanel,frame,Arena,CL_Agents base on 
+
+### How To Run :
+to run this program you should pull this repository to your git
+by the next commend -
+$ git clone 
+and to use the program on your computer create a main class,
+and use the class in the weighted graph program
+or if you want to run the full pokemon game just use the Jar Ex2
